@@ -10,8 +10,7 @@ namespace Console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Project to Call");
-            var numProject = Console.ReadLine()
+         
         }
     }
 }

@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace HackerRank
 {
-    public class Day2
+    public  class Day2
     {
-        public void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var mealCost = Convert.ToInt32(Console.ReadLine());
-            var tipPercent = Convert.ToInt32(Console.ReadLine());
-            var taxPercent = Convert.ToInt32(Console.ReadLine());
+            var mealCost = Convert.ToDouble(Console.ReadLine());
+            var tipPercent = Convert.ToDouble(Console.ReadLine());
+            var taxPercent = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine(getTotalCost(mealCost, tipPercent, taxPercent));
         }
 
-        public string getTotalCost(int mealCost, int tipPercent, int taxPercent)
+        static string getTotalCost(double mealCost, double tipPercent, double taxPercent)
         {
             double tip = mealCost * (tipPercent / 100);
             double tax = mealCost * (taxPercent / 100);

@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Project to Call");
             var item = Convert.ToInt32(Console.ReadLine());
             switch(item)
             {
-                case 0:
-
+                case 2:
+                    HackerRank.Day2.Main(null);
+                    break;
+                case 3:
+                    HackerRank.Day3.Main(null);
+                    break;
+                default:
+                    Console.WriteLine($"Wrong Opetion {item}");
+                    break;
             }
         }
     }
