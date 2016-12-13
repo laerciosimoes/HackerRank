@@ -23,6 +23,9 @@ namespace ConsoleApplication
                 case 4:
                     HackerRank.Day4.Main(null);
                     break;
+                case 10:
+                    HackerRank.Day10.Main(null);
+                    break;
                 default:
                     Console.WriteLine($"Wrong Opetion {item}");
                     break;
